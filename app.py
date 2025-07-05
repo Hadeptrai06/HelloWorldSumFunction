@@ -13,7 +13,7 @@ def sum_numbers():
     b = data.get('b', 0)
     return jsonify({'sum': a + b})
 
-@app.route('/tinhTuoi', medthods=['POST'])
+@app.route('/tinhTuoi', methods=['POST'])
 def tinhTuoi():
     data = request.get_json()
     namSinh = data.get('namSinh', 0)
